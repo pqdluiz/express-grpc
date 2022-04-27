@@ -1,15 +1,14 @@
 {
   "name": "grpc-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example with NodeJS and gRPC",
   "main": "greeter_client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "node client.js",
-    "server": "node server.js"
+    "client": "node src/client.js",
+    "server": "node src/server.js"
   },
   "author": "Luiz Lima",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.0",
     "co": "^4.6.0",

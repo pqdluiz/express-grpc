@@ -4,7 +4,7 @@ const path = require("path");
 const PROTO_PATH = path.join(__dirname, "/article.proto");
 const article = grpc.load(PROTO_PATH).article;
 
-let db = require("./db.json");
+let db = require("../db.json");
 
 class Article {
   getList(call, callback) {
