@@ -1,32 +1,22 @@
-# express-grpc
+# GRPC-node-example
 
-### Start application
+## Install packages
 ```bash
-$ yarn dev
-  #or
-$ npm dev  
+$ yarn install
+# or
+$ npm install
 ```
 
-### Test application
+## Start primary Server
 ```bash
-$ yarn test
-  #or
-$ npm test
+$ yarn server
+# or 
+$ npm server
 ```
 
-### References:
-
-ExpressJS
-```
-
-```
-
-Github Actions
-```
-
-```
-
-gRPC
-```
-
+## Start client later
+```bash
+$ yarn client
+# or
+$ npm client
 ```
