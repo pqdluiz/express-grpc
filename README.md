@@ -1,4 +1,4 @@
-# GRPC-node-example
+# EXPRESS-GRPC
 
 ## Install packages
 ```bash

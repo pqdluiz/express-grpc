@@ -12,6 +12,7 @@ class Article {
       articles: db,
     });
   }
+  
   getById(call, callback) {
     for (let i = 0; i < db.length; i++) {
       if (db[i].id === call.request.id) {
@@ -20,16 +21,19 @@ class Article {
     }
     return callback("Can not find article.");
   }
+
   insert(call, callback) {
     let newArticle = Object.assign({}, call.request);
     newArticle.id = db.length + 1 + "";
     db.push(newArticle);
     return callback(null, newArticle);
   }
+  
   update(call, callback) {
     if (!call.request.id) {
       return callback("Article id can not find.");
     }
+  
     for (let i = 0; i < db.length; i++) {
       if (db[i].id === call.request.id) {
         const newArticle = Object.assign(db[i], call.request);
